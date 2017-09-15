@@ -62,16 +62,15 @@ class Cadastro extends Component {
               $("#btn_cadastra").removeAttr("disabled");
               toastr.error(error.message, 'Erro');
           });
-
       }
     }
 
     adapterUsuario(){
       var usuario ={
         nome: this.usuario.nome.value,
-        apelido: this.usuario.apelido.value,
+        cnpj: this.usuario.cnpj.value,
         email: this.usuario.email.value,
-        fone:this.usuario.fone.value,
+        telefone:this.usuario.fone.value,
         senha: this.usuario.senha.value,
         confirmSenha:this.usuario.confirmSenha.value
       }
@@ -95,7 +94,7 @@ class Cadastro extends Component {
       toastr.clear();
       var valida = true;
       var form_nome = $(this.form_nome);
-      var form_apelido = $(this.form_apelido);
+      var form_cnpj = $(this.form_cnpj);
       var form_email = $(this.form_email);
       var form_senha = $(this.form_senha);
       var form_confirm = $(this.form_confirm);
@@ -107,8 +106,8 @@ class Cadastro extends Component {
           valida = false;
           toastr.error('O Campo \"Nome Completo\" é de preenchimento obrigatório!', 'Aviso');
       }
-      if(usuario.apelido.trim() == "" ){
-          form_apelido.addClass("has-error");
+      if(usuario.cnpj.trim() == "" ){
+          form_cnpj.addClass("has-error");
           valida = false;
           toastr.error('O Campo \"Como gostaria de ser chamado(a)\" é de preenchimento obrigatório!', 'Aviso');
       }
@@ -154,8 +153,8 @@ class Cadastro extends Component {
                         <div id="form_nome" ref={(form) => this.form_nome = form} className="col-md-6">
                             <input ref={(input) => this.usuario.nome = input} type="text" className="form-control" placeholder="Razão social *" required="" />
                         </div>
-                        <div id="form_apelido" ref={(form) => this.form_apelido = form} className="col-md-6">
-                            <input ref={(input) => this.usuario.apelido = input} type="text" className="form-control" placeholder="CNPJ *" required="" />
+                        <div id="form_apelido" ref={(form) => this.form_cnpj = form} className="col-md-6">
+                            <input ref={(input) => this.usuario.cnpj = input} type="text" className="form-control" placeholder="CNPJ *" required="" />
                         </div>
                       </div>
 

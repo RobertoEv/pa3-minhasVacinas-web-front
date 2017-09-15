@@ -1,5 +1,5 @@
-const SERVER_URL_PROD = "http://wsminhasvacinas.com.br/";
-const SERVER_URL_DESV = "http://localhost:8080/";
+const SERVER_URL_PROD = "http://wsminhasvacinas.com.br/wsminhasvacinas/";
+const SERVER_URL_DESV = "http://localhost:8080/wsminhasvacinas/";
 
 const CONFIG = {};
 
@@ -8,7 +8,7 @@ CONFIG.SERVER_URL = (location.hostname.indexOf("localhost") != -1 ? SERVER_URL_D
 
 //VARIAREIS DE SERVIÇOS
 CONFIG.AUTHENTICATION = CONFIG.SERVER_URL+"authentication/loginin";
-CONFIG.CADASTRO_USUARIO = CONFIG.SERVER_URL+"usuario"
+CONFIG.CADASTRO_USUARIO = CONFIG.SERVER_URL+"api/usuario"
 CONFIG.SERVICE_CURSO = CONFIG.SERVER_URL+"curso"
 
 export const APPLICATION = CONFIG;
