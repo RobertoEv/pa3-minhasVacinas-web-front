@@ -5,6 +5,7 @@ import Blank from '../components/layouts/Blank';
 
 import MainView from '../views/Main';
 import VacinaView from '../views/vacina/Vacina';
+import PetView from '../views/pet/Pet';
 import Login from '../views/login/Login';
 import CadastroView from '../views/usuario/Cadastro';
 
@@ -34,6 +35,7 @@ export default (
           <Route path="main" component={MainView}> </Route>
           <Route path="vacinas" component={VacinaView}> </Route>
           <Route path="atendimento" component={VacinaView}> </Route>
+          <Route path="pet" component={PetView}> </Route>
       </Route>
     </Router>
 );

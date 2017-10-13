@@ -49,6 +49,9 @@ class Navigation extends Component {
                         <li className={this.activeRoute("/atendimento")}>
                             <Link to="/atendimento"><i className="fa fa-handshake-o" aria-hidden="true"></i> <span className="nav-label">Atendimento</span></Link>
                         </li>
+                        <li className={this.activeRoute("/pet")}>
+                            <Link to="/pet"><i className="fa fa-paw"></i> <span className="nav-label">Pet</span></Link>
+                        </li>
 
                     </ul>
 

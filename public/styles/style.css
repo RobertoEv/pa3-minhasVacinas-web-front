@@ -4029,7 +4029,9 @@ table.table-mail tr td {
 /* BACKGROUNDS */
 .gray-bg,
 .bg-muted {
-  background-color: #f3f3f4;
+      background-image: url("../img/fundologin.png");
+      background-size: 1200px 800px;
+      background-color: #f3f3f4;
 }
 .white-bg {
   background-color: #ffffff;

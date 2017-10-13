@@ -53,6 +53,7 @@ class Login extends Component {
     render() {
         return (
             <div className="loginColumns animated fadeInDown">
+            
                 <div className="row">
 
                     <div className="col-md-6">

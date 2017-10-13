@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class VacinaModal extends Component {
+class PetModal extends Component {
 
     render() {
         return (
@@ -9,7 +9,7 @@ class VacinaModal extends Component {
                   <div className="modal-content animated bounceInRight">
                       <div className="modal-header">
                           <button type="button" className="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span className="sr-only">Close</span></button>
-                          <h4 className="modal-title"><i className="fa fa-tint" aria-hidden="true"></i> Vacina</h4>
+                          <h4 className="modal-title"><i className="fa fa-folder-open" aria-hidden="true"></i> Pet</h4>
                           <p>(<i id="state">Cadastro</i>)</p>
                       </div>
 
@@ -18,7 +18,7 @@ class VacinaModal extends Component {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="form-group">
-                                <label>Sigla</label>
+                                <label>Raça</label>
                                 <input id="in_sigla" type="text" className="form-control"/>
                               </div>
                             </div>
@@ -33,7 +33,7 @@ class VacinaModal extends Component {
                           <div className="row">
                               <div className="col-md-12">
                                 <div className="form-group">
-                                  <label>Descrição da Vacina</label>
+                                  <label>Descrição do Pet</label>
                                   <textarea id="tx_descricao" maxLength="200" className="form-control" />
                                 </div>
                               </div>
@@ -53,4 +53,4 @@ class VacinaModal extends Component {
 
 }
 
-export default VacinaModal
+export default PetModal
